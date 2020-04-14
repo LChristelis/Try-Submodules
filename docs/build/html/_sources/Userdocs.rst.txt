@@ -1,22 +1,15 @@
-.. SSItest documentation master file, created by
-   sphinx-quickstart on Mon Mar 30 23:54:53 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
-Welcome to SSItest's documentation!
-===================================
+Introduction to katdal
+======================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+Data access library for data sets in the MeerKAT Visibility Format (MVF)
 
-  
+Overview
+--------
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+This module serves as a data access library to interact with the chunk stores
+and HDF5 files produced by the MeerKAT radio telescope and its predecessors
+(KAT-7 and Fringe Finder). It uses memory carefully, allowing data sets to be
+inspected and partially loaded into memory. Data sets may be concatenated and
+split via a flexible selection mechanism. In addition, it provides a script to
+convert these data sets to CASA MeasurementSets.
